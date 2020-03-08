@@ -2,6 +2,6 @@ variable "CLASS" {
 
 }
 
-output "No declare" {
+output "No_declare" {
   value = var.CLASS
 }
