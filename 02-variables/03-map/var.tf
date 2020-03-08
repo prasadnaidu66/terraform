@@ -7,9 +7,9 @@ variable "TIMMINGS"{
 }
 
 output "MRNG_TIMMINGS" {
-  value = var.TIMMINGS[MORNG]
+  value = var.TIMMINGS["MORNG"]
 }
 
 output "EVN TIMMINGS" {
-  value = var.TIMMINGS[EVNG]
+  value = var.TIMMINGS["EVNG"]
 }
