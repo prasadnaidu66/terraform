@@ -1,4 +1,4 @@
-variable "TIMMINGS"{
+variable "CLASS_TIMMINGS"{
   default = {
     "MORNG" = "8:30AM"
     "EVNG"  = "6:30PM"
@@ -7,9 +7,9 @@ variable "TIMMINGS"{
 }
 
 output "MRNG_TIMMINGS" {
-  value = var.TIMMINGS["MORNG"]
+  value = var.CLASS_TIMMINGS["MORNG"]
 }
 
-output "EVN TIMMINGS" {
-  value = var.TIMMINGS["EVNG"]
+output "EVNG_TIMMINGS" {
+  value = var.CLASS_TIMMINGS["EVNG"]
 }
