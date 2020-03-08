@@ -1,7 +1,7 @@
 variable "TIMMINGS"{
   default = {
-    MORNG = "8:30AM"
-    EVNG  = "6:30PM"
+    "MORNG" = "8:30AM"
+    "EVNG"  = "6:30PM"
 
   }
 }
