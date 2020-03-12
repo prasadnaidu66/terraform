@@ -11,13 +11,13 @@ variable "ENV" {
 }
 
 locals{
-  RESOURCE_LC = "${var.PROJECT}-${var.ACTION}-${var.ENV}"
-  RESOURCE_UP = "${upper(var.PROJECT)}-${var.ACTION}-${var.ENV}"
+  RESOURCE_UC = "${var.PROJECT}-${var.ACTION}-${var.ENV}"
+  RESOURCE_LC = "${lower(var.PROJECT)}-${lower(var.ACTION)}-${lower(var.ENV)}"
 }
 
 output "R1" {
-  value = local.RESOURCE_LC
+  value = local.RESOURCE_UC
 }
 output "R2" {
-  value = local.RESOURCE_UP
+  value = local.RESOURCE_LC
 }
