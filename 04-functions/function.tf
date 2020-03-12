@@ -21,3 +21,5 @@ output "R1" {
 output "R2" {
   value = local.RESOURCE_LC
 }
+
+
