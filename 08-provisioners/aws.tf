@@ -44,7 +44,7 @@ resource "aws_security_group" "allow_web_and_ssh" {
 resource "aws_instance" "web" {
   ami                     = data.aws_ami.default.id
   instance_type           = "t2.micro"
-  key_name                = "devops"
+  key_name                = "TEST3"
   vpc_security_group_ids  = [aws_security_group.allow_web_and_ssh.id]
 
   tags                    = {
