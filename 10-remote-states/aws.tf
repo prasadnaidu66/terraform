@@ -7,6 +7,12 @@ terraform {
     bucket       = "d45-terraform-states-1"
     key          = "10-remote-states/terraform.tfstate"
     region       = "us-east-1"
-    lock_table   = ""
+    lock_table   = "samplelockterra"
   }
+}
+
+resource "null_resource " "just-sleep" {
+  provisioner    = "local-exec" {
+ command         = "sleep 120"
+}
 }
