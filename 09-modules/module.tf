@@ -5,3 +5,7 @@ provider "aws" {
 module "SETUP_WEBSERVER" {
   source = "./module"
 }
+
+output "WEB-ADDRESS" {
+  value = module.SETUP_WEBSERVER.PUBLIN_URL
+}
