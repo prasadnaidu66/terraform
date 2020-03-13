@@ -12,7 +12,7 @@ terraform {
 }
 
 resource "null_resource " "just_sleep" {
-  provisioner    = "local-exec" {
+  provisioner    "local-exec" {
  command         = "sleep 120"
 }
 }
