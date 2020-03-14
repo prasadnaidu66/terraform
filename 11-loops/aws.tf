@@ -7,7 +7,7 @@ resource "null_resource" "null" {
   count = var.Loop
 
   provisioner "local-exec" {
-    command = "echo"
+    command = "echo" - "${count.index}"
   }
 }
 
