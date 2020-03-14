@@ -6,7 +6,7 @@ variable "Loop" {
 resource "null_resource" "null" {
   count = var.Loop
 
-  provisioner "remote-exec" {
+  provisioner "local-exec" {
     command = "echo"
   }
 }
